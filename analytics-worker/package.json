@@ -1,0 +1,16 @@
+{
+  "name": "priyanka-visitor-analytics",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "test": "node --test aggregate.test.mjs",
+    "deploy": "wrangler deploy",
+    "db:init": "wrangler d1 execute priyanka-visitor-analytics --remote --file=schema.sql"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20260515.1",
+    "wrangler": "4.92.0"
+  }
+}

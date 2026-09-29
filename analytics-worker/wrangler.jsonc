@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "priyanka-visitor-analytics",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-29",
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "priyanka-visitor-analytics",
+    "database_id": "REPLACE_WITH_D1_DATABASE_ID"
+  }],
+  "vars": {
+    "ALLOWED_ORIGINS": "https://YOUR_GITHUB_USERNAME.github.io"
+  },
+  "observability": { "enabled": false },
+  "triggers": { "crons": ["23 3 * * *"] }
+}

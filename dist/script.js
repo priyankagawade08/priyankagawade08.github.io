@@ -30,3 +30,15 @@ if (reducedMotion || !('IntersectionObserver' in window)) {
 
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
+
+const analyticsEndpoint = window.PRIYANKA_ANALYTICS_ENDPOINT;
+if (typeof analyticsEndpoint === 'string' && /^https:\/\/[^/]+\/collect$/.test(analyticsEndpoint)) {
+  window.setTimeout(() => {
+    void fetch(analyticsEndpoint, {
+      method: 'POST',
+      credentials: 'omit',
+      referrerPolicy: 'no-referrer',
+      keepalive: true,
+    }).catch(() => { /* Analytics must never interrupt the portfolio. */ });
+  }, 0);
+}
