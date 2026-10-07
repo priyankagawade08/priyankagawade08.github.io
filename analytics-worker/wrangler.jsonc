@@ -6,10 +6,10 @@
   "d1_databases": [{
     "binding": "DB",
     "database_name": "priyanka-visitor-analytics",
-    "database_id": "REPLACE_WITH_D1_DATABASE_ID"
+    "database_id": "bcdb3077-4022-4b69-a2b3-8f5e9b4c3249"
   }],
   "vars": {
-    "ALLOWED_ORIGINS": "https://YOUR_GITHUB_USERNAME.github.io"
+    "ALLOWED_ORIGINS": "https://priyankagawade08.github.io"
   },
   "observability": { "enabled": false },
   "triggers": { "crons": ["23 3 * * *"] }
