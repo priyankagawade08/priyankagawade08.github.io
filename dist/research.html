@@ -17,10 +17,13 @@
       <div class="paper-layout">
         <div class="paper-copy reveal">
           <p class="paper-lede">Galaxy–galaxy strong lenses encode the distribution of matter around foreground galaxies, but modelling them one at a time is too slow for the vast samples expected from next-generation astronomical surveys. To make their analysis fast, automated, and scalable, this work develops a convolutional neural network for predicting Einstein radii and mass ellipticities directly from Hyper Suprime-Cam images. The lenses are also modelled with conventional methods, enabling a direct comparison with the network predictions.</p>
-          <div class="result-box"><span>Key result</span><strong>Fast inference works best when simulations preserve the noise and foreground complexity of the real survey.</strong></div>
+          <div class="result-box"><span>Key results</span><ul><li>The network enables fast, automated parameter inference for large samples of galaxy–galaxy strong lenses.</li><li>The most robust training strategy recovers Einstein radii to about 10–20% accuracy, with bias below 5% and an outlier fraction of roughly 10%.</li><li>Training samples perform best when they preserve the noise, foregrounds, and image complexity of the survey data.</li><li>Mass ellipticity estimates remain more sensitive to systematic differences between modelling methods.</li></ul></div>
           <a class="text-link" href="https://doi.org/10.1093/mnras/staf935" target="_blank" rel="noreferrer">Read the published paper</a>
         </div>
-        <figure class="paper-figure reveal"><img src="assets/papers/hsc-lenses.webp" alt="Ten SuGOHI strong gravitational lenses shown as survey images, lens-light-subtracted images, segmentation maps, lens models, reconstructed sources, and residuals"><figcaption><b>Figure 9.</b> Ten SuGOHI lenses through the modelling pipeline: original colour image, lens-light subtraction, object segmentation, best-fitting lens model, reconstructed source, and residual. Source: Gawade et al. (2025).</figcaption></figure>
+        <div class="paper-figures">
+          <figure class="paper-figure reveal"><img src="assets/papers/hsc-figure-6.webp" alt="Comparison of neural-network predictions with simulated truth and conventional YattaLens measurements for Einstein radius and ellipticity"><figcaption><b>Figure 6.</b> Performance of the network trained on the LensLight sample: predictions for the simulated test sample (upper row) and the SuGOHI lens sample not processed by YattaLens (lower row). Source: Gawade et al. (2025).</figcaption></figure>
+          <figure class="paper-figure reveal"><img src="assets/papers/hsc-lenses.webp" alt="Ten SuGOHI strong gravitational lenses shown as survey images, lens-light-subtracted images, segmentation maps, lens models, reconstructed sources, and residuals"><figcaption><b>Figure 9.</b> Ten SuGOHI lenses through the modelling pipeline: original colour image, lens-light subtraction, object segmentation, best-fitting lens model, reconstructed source, and residual. Source: Gawade et al. (2025).</figcaption></figure>
+        </div>
       </div>
     </article>
 
